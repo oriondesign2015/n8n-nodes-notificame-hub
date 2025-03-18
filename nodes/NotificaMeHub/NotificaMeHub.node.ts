@@ -4,6 +4,7 @@ import { revendaOperations } from './operations/revenda/Revenda.operations';
 import { instagramOperations } from './operations/instagram/Instagram.operations';
 import { messengerOperations } from './operations/messenger/Messenger.operations';
 import { telegramOperations } from './operations/telegram/Telegram.operations';
+import { whatsappOperations } from './operations/whatsapp/WhatsApp.operations';
 import { enviarMensagemTextoFields } from './fields/instagram/EnviarMensagemTexto.fields';
 import { enviarMensagemAudioFields } from './fields/instagram/EnviarMensagemAudio.fields';
 import { enviarArquivoFields } from './fields/instagram/EnviarArquivo.fields';
@@ -18,6 +19,8 @@ import { enviarBotaoFields as messengerEnviarBotaoFields } from './fields/messen
 import { enviarMensagemTextoFields as telegramEnviarMensagemTextoFields } from './fields/telegram/EnviarMensagemTexto.fields';
 import { enviarMensagemAudioFields as telegramEnviarMensagemAudioFields } from './fields/telegram/EnviarMensagemAudio.fields';
 import { enviarArquivoFields as telegramEnviarArquivoFields } from './fields/telegram/EnviarArquivo.fields';
+import { listarTemplatesFields } from './fields/whatsapp/ListarTemplates.fields';
+import { criarTemplateFields } from './fields/whatsapp/CriarTemplate.fields';
 
 export class NotificaMeHub implements INodeType {
 	description: INodeTypeDescription = {
@@ -52,6 +55,7 @@ export class NotificaMeHub implements INodeType {
 			instagramOperations,
 			messengerOperations,
 			telegramOperations,
+			whatsappOperations,
 			...enviarMensagemTextoFields,
 			...enviarMensagemAudioFields,
 			...enviarArquivoFields,
@@ -66,6 +70,8 @@ export class NotificaMeHub implements INodeType {
 			...telegramEnviarMensagemTextoFields,
 			...telegramEnviarMensagemAudioFields,
 			...telegramEnviarArquivoFields,
+			...listarTemplatesFields,
+			...criarTemplateFields,
 		],
 	};
 } 

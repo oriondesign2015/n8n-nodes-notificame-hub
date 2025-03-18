@@ -26,6 +26,11 @@ export const resources: INodeProperties = {
 			value: 'telegram',
 			description: 'Gerenciar canal do Telegram',
 		},
+		{
+			name: 'WhatsApp',
+			value: 'whatsapp',
+			description: 'Gerenciar canal do WhatsApp',
+		},
 	],
 	default: 'instagram',
 }; 
