@@ -7,6 +7,7 @@ import { enviarStickerTransport } from '../../transport/whatsapp/EnviarSticker.t
 import { enviarArquivoTransport } from '../../transport/whatsapp/EnviarArquivo.transport';
 import { enviarLocalizacaoTransport } from '../../transport/whatsapp/EnviarLocalizacao.transport';
 import { enviarMensagemBotoesTransport } from '../../transport/whatsapp/EnviarMensagemBotoes.transport';
+import { enviarMensagemListasTransport } from '../../transport/whatsapp/EnviarMensagemListas.transport';
 
 export const whatsappOperations: INodeProperties = {
 	displayName: 'Operação',
@@ -66,6 +67,12 @@ export const whatsappOperations: INodeProperties = {
 			value: 'enviarBotoes',
 			description: 'Envia uma mensagem interativa com botões para o WhatsApp',
 			routing: enviarMensagemBotoesTransport,
+		},
+		{
+			name: 'Enviar Listas',
+			value: 'enviarListas',
+			description: 'Envia uma mensagem interativa com listas para o WhatsApp',
+			routing: enviarMensagemListasTransport,
 		},
 	],
 	default: 'listarTemplates',

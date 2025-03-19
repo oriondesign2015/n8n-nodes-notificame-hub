@@ -28,6 +28,7 @@ import { enviarStickerFields as whatsappEnviarStickerFields } from './fields/wha
 import { enviarArquivoFields as whatsappEnviarArquivoFields } from './fields/whatsapp/EnviarArquivo.fields';
 import { enviarLocalizacaoFields as whatsappEnviarLocalizacaoFields } from './fields/whatsapp/EnviarLocalizacao.fields';
 import { enviarMensagemBotoesFields as whatsappEnviarMensagemBotoesFields } from './fields/whatsapp/EnviarMensagemBotoes.fields';
+import { enviarMensagemListasFields as whatsappEnviarMensagemListasFields } from './fields/whatsapp/EnviarMensagemListas.fields';
 
 export class NotificaMeHub implements INodeType {
 	description: INodeTypeDescription = {
@@ -86,6 +87,7 @@ export class NotificaMeHub implements INodeType {
 			...whatsappEnviarArquivoFields,
 			...whatsappEnviarLocalizacaoFields,
 			...whatsappEnviarMensagemBotoesFields,
+			...whatsappEnviarMensagemListasFields,
 		],
 	};
 } 
