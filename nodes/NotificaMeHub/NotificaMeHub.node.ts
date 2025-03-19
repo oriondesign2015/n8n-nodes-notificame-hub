@@ -21,6 +21,13 @@ import { enviarMensagemAudioFields as telegramEnviarMensagemAudioFields } from '
 import { enviarArquivoFields as telegramEnviarArquivoFields } from './fields/telegram/EnviarArquivo.fields';
 import { listarTemplatesFields } from './fields/whatsapp/ListarTemplates.fields';
 import { criarTemplateFields } from './fields/whatsapp/CriarTemplate.fields';
+import { enviarTemplateFields } from './fields/whatsapp/EnviarTemplate.fields';
+import { enviarMensagemTextoFields as whatsappEnviarMensagemTextoFields } from './fields/whatsapp/EnviarMensagemTexto.fields';
+import { enviarMensagemAudioFields as whatsappEnviarMensagemAudioFields } from './fields/whatsapp/EnviarMensagemAudio.fields';
+import { enviarStickerFields as whatsappEnviarStickerFields } from './fields/whatsapp/EnviarSticker.fields';
+import { enviarArquivoFields as whatsappEnviarArquivoFields } from './fields/whatsapp/EnviarArquivo.fields';
+import { enviarLocalizacaoFields as whatsappEnviarLocalizacaoFields } from './fields/whatsapp/EnviarLocalizacao.fields';
+import { enviarMensagemBotoesFields as whatsappEnviarMensagemBotoesFields } from './fields/whatsapp/EnviarMensagemBotoes.fields';
 
 export class NotificaMeHub implements INodeType {
 	description: INodeTypeDescription = {
@@ -72,6 +79,13 @@ export class NotificaMeHub implements INodeType {
 			...telegramEnviarArquivoFields,
 			...listarTemplatesFields,
 			...criarTemplateFields,
+			...enviarTemplateFields,
+			...whatsappEnviarMensagemTextoFields,
+			...whatsappEnviarMensagemAudioFields,
+			...whatsappEnviarStickerFields,
+			...whatsappEnviarArquivoFields,
+			...whatsappEnviarLocalizacaoFields,
+			...whatsappEnviarMensagemBotoesFields,
 		],
 	};
 } 
