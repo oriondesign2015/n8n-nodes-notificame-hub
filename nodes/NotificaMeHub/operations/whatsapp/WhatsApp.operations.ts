@@ -8,6 +8,7 @@ import { enviarArquivoTransport } from '../../transport/whatsapp/EnviarArquivo.t
 import { enviarLocalizacaoTransport } from '../../transport/whatsapp/EnviarLocalizacao.transport';
 import { enviarMensagemBotoesTransport } from '../../transport/whatsapp/EnviarMensagemBotoes.transport';
 import { enviarMensagemListasTransport } from '../../transport/whatsapp/EnviarMensagemListas.transport';
+import { enviarMensagemCTATransport } from '../../transport/whatsapp/EnviarMensagemCTA.transport';
 
 export const whatsappOperations: INodeProperties = {
 	displayName: 'Operação',
@@ -73,6 +74,12 @@ export const whatsappOperations: INodeProperties = {
 			value: 'enviarListas',
 			description: 'Envia uma mensagem interativa com listas para o WhatsApp',
 			routing: enviarMensagemListasTransport,
+		},
+		{
+			name: 'Enviar Link Interativo (CTA)',
+			value: 'enviarCTA',
+			description: 'Envia uma mensagem interativa com link para o WhatsApp',
+			routing: enviarMensagemCTATransport,
 		},
 	],
 	default: 'listarTemplates',
