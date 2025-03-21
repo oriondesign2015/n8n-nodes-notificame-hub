@@ -35,19 +35,22 @@ export const enviarArquivoFields: INodeProperties[] = [
 		type: 'options',
 		options: [
 			{
-				name: 'Imagem',
-				value: 'image',
+				name: 'Documento',
+				value: 'document',
+				description: 'Qualquer tipo de arquivo como documento',
+			},
+			{
+				name: 'Foto',
+				value: 'photo',
+				description: 'Imagem para ser enviada como foto',
 			},
 			{
 				name: 'Vídeo',
 				value: 'video',
-			},
-			{
-				name: 'Documento',
-				value: 'document',
+				description: 'Arquivo de vídeo',
 			},
 		],
-		default: 'image',
+		default: 'document',
 		description: 'Tipo do arquivo a ser enviado',
 		displayOptions: {
 			show: {
@@ -62,7 +65,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		type: 'string',
 		required: true,
 		default: '',
-		description: 'URL pública do arquivo',
+		description: 'URL pública do arquivo a ser enviado',
 		displayOptions: {
 			show: {
 				resource: ['telegram'],
@@ -75,8 +78,8 @@ export const enviarArquivoFields: INodeProperties[] = [
 		name: 'caption',
 		type: 'string',
 		required: false,
-		default: '',
-		description: 'Legenda que será exibida junto com o arquivo',
+		default: ' ',
+		description: 'Legenda opcional para o arquivo',
 		displayOptions: {
 			show: {
 				resource: ['telegram'],

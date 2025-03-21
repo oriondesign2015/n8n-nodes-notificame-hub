@@ -29,7 +29,7 @@ export const telegramOperations: INodeProperties = {
 		{
 			name: 'Enviar Arquivo',
 			value: 'enviarArquivo',
-			description: 'Envia um arquivo (imagem, vídeo ou documento) para o Telegram',
+			description: 'Envia um arquivo (documento, foto ou vídeo) para o Telegram',
 			routing: enviarArquivoTransport,
 		},
 	],
