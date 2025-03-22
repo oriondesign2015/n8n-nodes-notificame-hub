@@ -17,6 +17,7 @@ export const revendaOperations: INodeProperties = {
 			value: 'listSubaccounts',
 			description: 'Retorna uma lista das subcontas criadas',
 			routing: listarSubcontasTransport,
+			action: 'Listar subcontas a revenda',
 		},
 	],
 	default: 'listSubaccounts',

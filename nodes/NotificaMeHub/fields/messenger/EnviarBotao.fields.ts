@@ -2,7 +2,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarBotaoFields: INodeProperties[] = [
 	{
-		displayName: 'ID do Canal',
+		displayName: 'ID Do Canal',
 		name: 'channelId',
 		type: 'string',
 		required: true,
@@ -16,7 +16,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID do Destinatário',
+		displayName: 'ID Do Destinatário',
 		name: 'recipientId',
 		type: 'string',
 		required: true,
@@ -30,7 +30,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Tipo do Template',
+		displayName: 'Tipo Do Template',
 		name: 'templateType',
 		type: 'options',
 		options: [
@@ -137,7 +137,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Título do Cupom',
+		displayName: 'Título Do Cupom',
 		name: 'couponTitle',
 		type: 'string',
 		required: true,
@@ -152,7 +152,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Código do Cupom',
+		displayName: 'Código Do Cupom',
 		name: 'couponCode',
 		type: 'string',
 		required: true,
@@ -167,7 +167,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Título da Avaliação',
+		displayName: 'Título Da Avaliação',
 		name: 'feedbackTitle',
 		type: 'string',
 		required: true,
@@ -182,7 +182,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Subtítulo da Avaliação',
+		displayName: 'Subtítulo Da Avaliação',
 		name: 'feedbackSubtitle',
 		type: 'string',
 		required: true,
@@ -197,7 +197,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto do Botão',
+		displayName: 'Texto Do Botão',
 		name: 'buttonTitle',
 		type: 'string',
 		required: true,
@@ -212,7 +212,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL da Política de Privacidade',
+		displayName: 'URL Da Política De Privacidade',
 		name: 'privacyUrl',
 		type: 'string',
 		required: true,
@@ -227,7 +227,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Dias para Expirar',
+		displayName: 'Dias Para Expirar',
 		name: 'expiresInDays',
 		type: 'number',
 		required: true,
@@ -242,7 +242,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Título da Compra',
+		displayName: 'Título Da Compra',
 		name: 'orderTitle',
 		type: 'string',
 		required: true,
@@ -257,7 +257,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Subtítulo da Compra',
+		displayName: 'Subtítulo Da Compra',
 		name: 'orderSubtitle',
 		type: 'string',
 		required: true,
@@ -272,12 +272,12 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Pedido',
+		displayName: 'Número Do Pedido',
 		name: 'orderNumber',
 		type: 'string',
 		required: true,
 		default: '',
-		description: 'Número do pedido',
+
 		displayOptions: {
 			show: {
 				resource: ['messenger'],
@@ -302,7 +302,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Método de Pagamento',
+		displayName: 'Método De Pagamento',
 		name: 'paymentMethod',
 		type: 'string',
 		required: true,
@@ -317,7 +317,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL do Pedido',
+		displayName: 'URL Do Pedido',
 		name: 'orderUrl',
 		type: 'string',
 		required: true,
@@ -332,7 +332,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Data do Pedido',
+		displayName: 'Data Do Pedido',
 		name: 'timestamp',
 		type: 'string',
 		required: true,
@@ -354,7 +354,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		options: [
 			{
 				name: 'addressFields',
-				displayName: 'Campos do Endereço',
+				displayName: 'Campos Do Endereço',
 				values: [
 					{
 						displayName: 'Rua',
@@ -528,7 +528,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 						default: 'BRL',
 					},
 					{
-						displayName: 'URL da Imagem',
+						displayName: 'URL Da Imagem',
 						name: 'imageUrl',
 						type: 'string',
 						default: '',
@@ -545,7 +545,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Nome do Cliente',
+		displayName: 'Nome Do Cliente',
 		name: 'recipientName',
 		type: 'string',
 		required: true,

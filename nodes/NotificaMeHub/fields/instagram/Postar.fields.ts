@@ -2,7 +2,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const postarFields: INodeProperties[] = [
 	{
-		displayName: 'ID do Canal',
+		displayName: 'ID Do Canal',
 		name: 'channelId',
 		type: 'string',
 		required: true,
@@ -16,7 +16,7 @@ export const postarFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Tipo da Postagem',
+		displayName: 'Tipo Da Postagem',
 		name: 'postType',
 		type: 'options',
 		options: [
@@ -46,7 +46,7 @@ export const postarFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL do Arquivo',
+		displayName: 'URL Do Arquivo',
 		name: 'fileUrl',
 		type: 'string',
 		required: true,
@@ -63,7 +63,7 @@ export const postarFields: INodeProperties[] = [
 		displayName: 'Legenda',
 		name: 'caption',
 		type: 'string',
-		required: false,
+
 		default: '',
 		description: 'Legenda da postagem',
 		displayOptions: {

@@ -2,9 +2,10 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarLocalizacaoFields: INodeProperties[] = [
 	{
-		displayName: 'Token do Canal',
+		displayName: 'Token Do Canal',
 		name: 'channelToken',
 		type: 'string',
+		typeOptions: { password: true },
 		required: true,
 		default: '',
 		description: 'Token do canal do WhatsApp',
@@ -16,7 +17,7 @@ export const enviarLocalizacaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Destinatário',
+		displayName: 'Número Do Destinatário',
 		name: 'recipientNumber',
 		type: 'string',
 		required: true,
@@ -58,12 +59,12 @@ export const enviarLocalizacaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Nome da Localização',
+		displayName: 'Nome Da Localização',
 		name: 'locationName',
 		type: 'string',
 		required: true,
 		default: '',
-		description: 'Nome da localização',
+
 		displayOptions: {
 			show: {
 				resource: ['whatsapp'],
@@ -72,12 +73,12 @@ export const enviarLocalizacaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Endereço da Localização',
+		displayName: 'Endereço Da Localização',
 		name: 'locationAddress',
 		type: 'string',
 		required: true,
 		default: '',
-		description: 'Endereço da localização',
+
 		displayOptions: {
 			show: {
 				resource: ['whatsapp'],

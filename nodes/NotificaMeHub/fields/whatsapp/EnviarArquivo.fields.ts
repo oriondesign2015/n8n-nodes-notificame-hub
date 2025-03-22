@@ -2,9 +2,10 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarArquivoFields: INodeProperties[] = [
 	{
-		displayName: 'Token do Canal',
+		displayName: 'Token Do Canal',
 		name: 'channelToken',
 		type: 'string',
+		typeOptions: { password: true },
 		required: true,
 		default: '',
 		description: 'Token do canal do WhatsApp',
@@ -16,7 +17,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Destinatário',
+		displayName: 'Número Do Destinatário',
 		name: 'recipientNumber',
 		type: 'string',
 		required: true,
@@ -30,7 +31,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Tipo de Arquivo',
+		displayName: 'Tipo De Arquivo',
 		name: 'fileType',
 		type: 'options',
 		options: [
@@ -57,7 +58,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL do Arquivo',
+		displayName: 'URL Do Arquivo',
 		name: 'fileUrl',
 		type: 'string',
 		required: true,
@@ -74,7 +75,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		displayName: 'Legenda',
 		name: 'caption',
 		type: 'string',
-		required: false,
+
 		default: ' ',
 		description: 'Legenda opcional para o arquivo',
 		displayOptions: {

@@ -2,9 +2,10 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const criarTemplateFields: INodeProperties[] = [
 	{
-		displayName: 'Token do Canal',
+		displayName: 'Token Do Canal',
 		name: 'channelToken',
 		type: 'string',
+		typeOptions: { password: true },
 		required: true,
 		default: '',
 		description: 'Token do canal do WhatsApp',
@@ -16,7 +17,7 @@ export const criarTemplateFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Nome do Template',
+		displayName: 'Nome Do Template',
 		name: 'templateName',
 		type: 'string',
 		required: true,
@@ -154,7 +155,7 @@ export const criarTemplateFields: INodeProperties[] = [
 						name: 'text',
 						type: 'string',
 						default: '',
-						description: 'Texto do componente (use {{1}}, {{2}}, etc. para parâmetros)',
+						description: 'Texto do componente (use {{1}}, {{2}}, etc. para parâmetros).',
 						displayOptions: {
 							show: {
 								type: ['HEADER', 'BODY', 'FOOTER'],

@@ -2,7 +2,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const listarPostagensFields: INodeProperties[] = [
 	{
-		displayName: 'ID do Canal',
+		displayName: 'ID Do Canal',
 		name: 'channelId',
 		type: 'string',
 		required: true,

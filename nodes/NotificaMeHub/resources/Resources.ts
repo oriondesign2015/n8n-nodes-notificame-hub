@@ -7,11 +7,6 @@ export const resources: INodeProperties = {
 	noDataExpression: true,
 	options: [
 		{
-			name: 'Revenda',
-			value: 'revenda',
-			description: 'Gerenciar subcontas e revendas',
-		},
-		{
 			name: 'Instagram',
 			value: 'instagram',
 			description: 'Gerenciar canal do Instagram',
@@ -20,6 +15,11 @@ export const resources: INodeProperties = {
 			name: 'Messenger',
 			value: 'messenger',
 			description: 'Gerenciar canal do Messenger',
+		},
+		{
+			name: 'Revenda',
+			value: 'revenda',
+			description: 'Gerenciar subcontas e revendas',
 		},
 		{
 			name: 'Telegram',

@@ -2,7 +2,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarBotaoFields: INodeProperties[] = [
 	{
-		displayName: 'ID do Canal',
+		displayName: 'ID Do Canal',
 		name: 'channelId',
 		type: 'string',
 		required: true,
@@ -16,7 +16,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID do Destinatário',
+		displayName: 'ID Do Destinatário',
 		name: 'recipientId',
 		type: 'string',
 		required: true,
@@ -61,7 +61,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 				displayName: 'Botão',
 				values: [
 					{
-						displayName: 'Tipo do Botão',
+						displayName: 'Tipo Do Botão',
 						name: 'type',
 						type: 'options',
 						options: [
@@ -77,7 +77,7 @@ export const enviarBotaoFields: INodeProperties[] = [
 							},
 						],
 						default: 'web_url',
-						description: 'Tipo do botão',
+
 						required: true,
 					},
 					{

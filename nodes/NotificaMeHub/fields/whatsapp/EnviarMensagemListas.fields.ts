@@ -2,9 +2,10 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarMensagemListasFields: INodeProperties[] = [
 	{
-		displayName: 'Token do Canal',
+		displayName: 'Token Do Canal',
 		name: 'channelToken',
 		type: 'string',
+		typeOptions: { password: true },
 		required: true,
 		default: '',
 		description: 'Token do canal do WhatsApp',
@@ -16,7 +17,7 @@ export const enviarMensagemListasFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Destinatário',
+		displayName: 'Número Do Destinatário',
 		name: 'recipientNumber',
 		type: 'string',
 		required: true,
@@ -30,7 +31,7 @@ export const enviarMensagemListasFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto do Cabeçalho',
+		displayName: 'Texto Do Cabeçalho',
 		name: 'headerText',
 		type: 'string',
 		required: true,
@@ -44,7 +45,7 @@ export const enviarMensagemListasFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto da Mensagem',
+		displayName: 'Texto Da Mensagem',
 		name: 'bodyText',
 		type: 'string',
 		typeOptions: {
@@ -61,7 +62,7 @@ export const enviarMensagemListasFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto do Botão',
+		displayName: 'Texto Do Botão',
 		name: 'buttonText',
 		type: 'string',
 		required: true,
@@ -92,7 +93,7 @@ export const enviarMensagemListasFields: INodeProperties[] = [
 				displayName: 'Seção',
 				values: [
 					{
-						displayName: 'Título da Seção',
+						displayName: 'Título Da Seção',
 						name: 'title',
 						type: 'string',
 						default: '',
@@ -100,7 +101,7 @@ export const enviarMensagemListasFields: INodeProperties[] = [
 						required: true,
 					},
 					{
-						displayName: 'Itens da Lista',
+						displayName: 'Itens Da Lista',
 						name: 'rows',
 						type: 'fixedCollection',
 						typeOptions: {
@@ -138,7 +139,7 @@ export const enviarMensagemListasFields: INodeProperties[] = [
 										type: 'string',
 										default: '',
 										description: 'Descrição do item (máximo 72 caracteres)',
-										required: false,
+
 									},
 								],
 							},

@@ -2,9 +2,10 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarStickerFields: INodeProperties[] = [
 	{
-		displayName: 'Token do Canal',
+		displayName: 'Token Do Canal',
 		name: 'channelToken',
 		type: 'string',
+		typeOptions: { password: true },
 		required: true,
 		default: '',
 		description: 'Token do canal do WhatsApp',
@@ -16,7 +17,7 @@ export const enviarStickerFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Destinatário',
+		displayName: 'Número Do Destinatário',
 		name: 'recipientNumber',
 		type: 'string',
 		required: true,
@@ -30,7 +31,7 @@ export const enviarStickerFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL do Sticker',
+		displayName: 'URL Do Sticker',
 		name: 'stickerUrl',
 		type: 'string',
 		required: true,

@@ -2,9 +2,10 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarMensagemCTAFields: INodeProperties[] = [
 	{
-		displayName: 'Token do Canal',
+		displayName: 'Token Do Canal',
 		name: 'channelToken',
 		type: 'string',
+		typeOptions: { password: true },
 		required: true,
 		default: '',
 		description: 'Token do canal do WhatsApp',
@@ -16,7 +17,7 @@ export const enviarMensagemCTAFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Destinatário',
+		displayName: 'Número Do Destinatário',
 		name: 'recipientNumber',
 		type: 'string',
 		required: true,
@@ -30,7 +31,7 @@ export const enviarMensagemCTAFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto do Cabeçalho',
+		displayName: 'Texto Do Cabeçalho',
 		name: 'headerText',
 		type: 'string',
 		required: true,
@@ -44,7 +45,7 @@ export const enviarMensagemCTAFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto da Mensagem',
+		displayName: 'Texto Da Mensagem',
 		name: 'bodyText',
 		type: 'string',
 		typeOptions: {
@@ -61,10 +62,10 @@ export const enviarMensagemCTAFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto do Rodapé',
+		displayName: 'Texto Do Rodapé',
 		name: 'footerText',
 		type: 'string',
-		required: false,
+
 		default: '',
 		description: 'Texto que aparecerá no rodapé da mensagem',
 		displayOptions: {
@@ -75,7 +76,7 @@ export const enviarMensagemCTAFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Texto do Botão',
+		displayName: 'Texto Do Botão',
 		name: 'buttonText',
 		type: 'string',
 		required: true,
@@ -89,7 +90,7 @@ export const enviarMensagemCTAFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL do Botão',
+		displayName: 'URL Do Botão',
 		name: 'buttonUrl',
 		type: 'string',
 		required: true,

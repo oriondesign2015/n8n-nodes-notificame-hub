@@ -25,6 +25,7 @@ export const resaleOperations: INodeProperties[] = [
 						},
 					},
 				},
+				action: 'Listar subcontas a revenda',
 			},
 		],
 		default: 'listSubaccounts',

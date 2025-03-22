@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-notificamehub",
+  "name": "n8n-nodes-notificame-hub",
   "version": "0.1.0",
-  "description": "",
+  "description": "A NotificaMe Hub automatiza a comunicação em múltiplos canais, oferecendo soluções integradas e escaláveis.",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "OrionDesign",
+    "email": "contato@oriondesign.art.br"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/oriondesign2015/n8n-nodes-notificame-hub.git"
   },
   "engines": {
     "node": ">=18.10",

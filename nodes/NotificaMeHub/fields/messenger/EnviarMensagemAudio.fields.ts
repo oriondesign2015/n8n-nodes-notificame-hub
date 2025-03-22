@@ -2,7 +2,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarMensagemAudioFields: INodeProperties[] = [
 	{
-		displayName: 'ID do Canal',
+		displayName: 'ID Do Canal',
 		name: 'channelId',
 		type: 'string',
 		required: true,
@@ -16,7 +16,7 @@ export const enviarMensagemAudioFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID do Destinatário',
+		displayName: 'ID Do Destinatário',
 		name: 'recipientId',
 		type: 'string',
 		required: true,
@@ -30,7 +30,7 @@ export const enviarMensagemAudioFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL do Áudio',
+		displayName: 'URL Do Áudio',
 		name: 'audioUrl',
 		type: 'string',
 		required: true,

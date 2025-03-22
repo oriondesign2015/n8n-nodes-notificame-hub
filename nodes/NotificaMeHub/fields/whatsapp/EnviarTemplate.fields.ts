@@ -2,9 +2,10 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarTemplateFields: INodeProperties[] = [
 	{
-		displayName: 'Token do Canal',
+		displayName: 'Token Do Canal',
 		name: 'channelToken',
 		type: 'string',
+		typeOptions: { password: true },
 		required: true,
 		default: '',
 		description: 'Token do canal do WhatsApp',
@@ -16,7 +17,7 @@ export const enviarTemplateFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Número do Destinatário',
+		displayName: 'Número Do Destinatário',
 		name: 'recipientNumber',
 		type: 'string',
 		required: true,
@@ -30,7 +31,7 @@ export const enviarTemplateFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Nome do Template',
+		displayName: 'Nome Do Template',
 		name: 'templateName',
 		type: 'string',
 		required: true,
@@ -121,14 +122,14 @@ export const enviarTemplateFields: INodeProperties[] = [
 								displayName: 'Parâmetro',
 								values: [
 									{
-										displayName: 'Usar Nome do Parâmetro',
+										displayName: 'Usar Nome Do Parâmetro',
 										name: 'useParameterName',
 										type: 'boolean',
 										default: false,
-										description: 'Se deve usar o nome do parâmetro em vez de posição',
+										description: 'Whether to use the parameter name instead of position',
 									},
 									{
-										displayName: 'Nome do Parâmetro',
+										displayName: 'Nome Do Parâmetro',
 										name: 'parameterName',
 										type: 'string',
 										default: '',

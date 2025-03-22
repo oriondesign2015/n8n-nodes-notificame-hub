@@ -2,7 +2,7 @@ import { INodeProperties } from 'n8n-workflow';
 
 export const enviarArquivoFields: INodeProperties[] = [
 	{
-		displayName: 'ID do Canal',
+		displayName: 'ID Do Canal',
 		name: 'channelId',
 		type: 'string',
 		required: true,
@@ -16,7 +16,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'ID do Destinatário',
+		displayName: 'ID Do Destinatário',
 		name: 'recipientId',
 		type: 'string',
 		required: true,
@@ -30,7 +30,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'Tipo do Arquivo',
+		displayName: 'Tipo Do Arquivo',
 		name: 'fileType',
 		type: 'options',
 		options: [
@@ -60,7 +60,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		},
 	},
 	{
-		displayName: 'URL do Arquivo',
+		displayName: 'URL Do Arquivo',
 		name: 'fileUrl',
 		type: 'string',
 		required: true,
@@ -77,7 +77,7 @@ export const enviarArquivoFields: INodeProperties[] = [
 		displayName: 'Legenda',
 		name: 'caption',
 		type: 'string',
-		required: false,
+
 		default: ' ',
 		description: 'Legenda opcional para o arquivo',
 		displayOptions: {
