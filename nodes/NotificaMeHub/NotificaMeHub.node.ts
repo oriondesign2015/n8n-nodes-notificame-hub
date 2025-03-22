@@ -4,7 +4,8 @@ import { revendaOperations } from './operations/revenda/Revenda.operations';
 import { instagramOperations } from './operations/instagram/Instagram.operations';
 import { messengerOperations } from './operations/messenger/Messenger.operations';
 import { telegramOperations } from './operations/telegram/Telegram.operations';
-import { whatsappOperations } from './operations/whatsapp/WhatsApp.operations';
+import { whatsappOperations } from './operations/whatsapp/Whatsapp.operations';
+import { webchatOperations } from './operations/webchat/WebChat.operations';
 import { enviarMensagemTextoFields } from './fields/instagram/EnviarMensagemTexto.fields';
 import { enviarMensagemAudioFields } from './fields/instagram/EnviarMensagemAudio.fields';
 import { enviarArquivoFields } from './fields/instagram/EnviarArquivo.fields';
@@ -18,6 +19,9 @@ import { enviarArquivoFields as messengerEnviarArquivoFields } from './fields/me
 import { enviarBotaoFields as messengerEnviarBotaoFields } from './fields/messenger/EnviarBotao.fields';
 import { enviarMensagemTextoFields as telegramEnviarMensagemTextoFields } from './fields/telegram/EnviarMensagemTexto.fields';
 import { enviarMensagemAudioFields as telegramEnviarMensagemAudioFields } from './fields/telegram/EnviarMensagemAudio.fields';
+import { enviarArquivoFields as telegramEnviarArquivoFields } from './fields/telegram/EnviarArquivo.fields';
+import { enviarMensagemTextoFields as webchatEnviarMensagemTextoFields } from './fields/webchat/EnviarMensagemTexto.fields';
+import { enviarArquivoFields as webchatEnviarArquivoFields } from './fields/webchat/EnviarArquivo.fields';
 import { listarTemplatesFields } from './fields/whatsapp/ListarTemplates.fields';
 import { criarTemplateFields } from './fields/whatsapp/CriarTemplate.fields';
 import { enviarTemplateFields } from './fields/whatsapp/EnviarTemplate.fields';
@@ -29,7 +33,6 @@ import { enviarLocalizacaoFields as whatsappEnviarLocalizacaoFields } from './fi
 import { enviarMensagemBotoesFields as whatsappEnviarMensagemBotoesFields } from './fields/whatsapp/EnviarMensagemBotoes.fields';
 import { enviarMensagemListasFields as whatsappEnviarMensagemListasFields } from './fields/whatsapp/EnviarMensagemListas.fields';
 import { enviarMensagemCTAFields as whatsappEnviarMensagemCTAFields } from './fields/whatsapp/EnviarMensagemCTA.fields';
-import { enviarArquivoFields as telegramEnviarArquivoFields } from './fields/telegram/EnviarArquivo.fields';
 
 export class NotificaMeHub implements INodeType {
 	description: INodeTypeDescription = {
@@ -65,6 +68,7 @@ export class NotificaMeHub implements INodeType {
 			messengerOperations,
 			telegramOperations,
 			whatsappOperations,
+			webchatOperations,
 			...enviarMensagemTextoFields,
 			...enviarMensagemAudioFields,
 			...enviarArquivoFields,
@@ -78,6 +82,9 @@ export class NotificaMeHub implements INodeType {
 			...messengerEnviarBotaoFields,
 			...telegramEnviarMensagemTextoFields,
 			...telegramEnviarMensagemAudioFields,
+			...telegramEnviarArquivoFields,
+			...webchatEnviarMensagemTextoFields,
+			...webchatEnviarArquivoFields,
 			...listarTemplatesFields,
 			...criarTemplateFields,
 			...enviarTemplateFields,
@@ -89,7 +96,6 @@ export class NotificaMeHub implements INodeType {
 			...whatsappEnviarMensagemBotoesFields,
 			...whatsappEnviarMensagemListasFields,
 			...whatsappEnviarMensagemCTAFields,
-			...telegramEnviarArquivoFields,
 		],
 	};
 } 

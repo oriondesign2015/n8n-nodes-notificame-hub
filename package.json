@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-notificame-hub",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "A NotificaMe Hub automatiza a comunicação em múltiplos canais, oferecendo soluções integradas e escaláveis.",
   "keywords": [
     "n8n-community-node-package"

@@ -112,8 +112,8 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-  <details><summary>❌ <b>Enviar uma mensagem de texto</b></summary></details>
-  <details><summary>❌ <b>Enviar um arquivo (documento, imagens, vídeos…)</b></summary></details>
+  <details><summary>✅ <b>Enviar uma mensagem de texto</b></summary></details>
+  <details><summary>✅ <b>Enviar um arquivo (documento, imagens, vídeos…)</b></summary></details>
 </details>
 
 <h3>Email</h3>
