@@ -121,8 +121,8 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-  <details><summary>❌ <b>Enviar um email (somente texto)</b></summary></details>
-  <details><summary>❌ <b>Enviar um email (com arquivos)</b></summary></details>
+  <details><summary>✅ <b>Enviar um email (somente texto)</b></summary></details>
+  <details><summary>✅ <b>Enviar um email (com arquivos)</b></summary></details>
 </details>
 
 <h1></h1>

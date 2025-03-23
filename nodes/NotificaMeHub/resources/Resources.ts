@@ -7,6 +7,10 @@ export const resources: INodeProperties = {
 	noDataExpression: true,
 	options: [
 		{
+			name: 'Email',
+			value: 'email',
+		},
+		{
 			name: 'Instagram',
 			value: 'instagram',
 			description: 'Gerenciar canal do Instagram',
