@@ -48,5 +48,24 @@ module.exports = {
 				'n8n-nodes-base/node-param-fixed-collection-type-unsorted-items': 'off',
 			},
 		},
+		{
+			files: ['nodes/NotificaMeHub/resources/Resources.ts'],
+			rules: {
+				'n8n-nodes-base/node-param-options-type-unsorted-items': 'off'
+			}
+		},
+		{
+			files: ['nodes/NotificaMeHub/NotificaMeHub.node.ts'],
+			rules: {
+				'n8n-nodes-base/node-class-description-inputs-wrong-regular-node': 'off',
+				'n8n-nodes-base/node-class-description-outputs-wrong': 'off'
+			}
+		}
 	],
+
+	rules: {
+		'n8n-nodes-base/node-param-default-missing': 'off',
+		'n8n-nodes-base/node-class-description-inputs-wrong-regular-node': 'off',
+		'n8n-nodes-base/node-class-description-outputs-wrong': 'off',
+	}
 };

@@ -7,9 +7,9 @@ export const resources: INodeProperties = {
 	noDataExpression: true,
 	options: [
 		{
-			name: 'Email',
-			value: 'email',
-			description: 'Enviar emails com ou sem anexos',
+			name: 'Revenda',
+			value: 'revenda',
+			description: 'Gerenciar subcontas e revendas',
 		},
 		{
 			name: 'Instagram',
@@ -17,19 +17,14 @@ export const resources: INodeProperties = {
 			description: 'Gerenciar canal do Instagram',
 		},
 		{
-			name: 'Mercado Livre',
-			value: 'mercadolivre',
-			description: 'Responder perguntas de clientes no Mercado Livre',
-		},
-		{
 			name: 'Messenger',
 			value: 'messenger',
 			description: 'Gerenciar canal do Messenger',
 		},
 		{
-			name: 'Revenda',
-			value: 'revenda',
-			description: 'Gerenciar subcontas e revendas',
+			name: 'WhatsApp',
+			value: 'whatsapp',
+			description: 'Gerenciar canal do WhatsApp',
 		},
 		{
 			name: 'Telegram',
@@ -37,15 +32,25 @@ export const resources: INodeProperties = {
 			description: 'Gerenciar canal do Telegram',
 		},
 		{
+			name: 'Mercado Livre',
+			value: 'mercadolivre',
+			description: 'Responder perguntas de clientes no Mercado Livre',
+		},
+		{
+			name: 'OLX',
+			value: 'olx',
+			description: 'Enviar mensagens para clientes na OLX',
+		},
+		{
 			name: 'WebChat',
 			value: 'webchat',
 			description: 'Gerenciar canal de chat para websites',
 		},
 		{
-			name: 'WhatsApp',
-			value: 'whatsapp',
-			description: 'Gerenciar canal do WhatsApp',
+			name: 'Email',
+			value: 'email',
+			description: 'Enviar emails com ou sem anexos',
 		},
 	],
-	default: 'whatsapp',
+	default: 'revenda',
 }; 

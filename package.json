@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-notificame-hub",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "description": "A NotificaMe Hub automatiza a comunicação em múltiplos canais, oferecendo soluções integradas e escaláveis.",
   "keywords": [
     "n8n-community-node-package"
@@ -24,6 +24,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "tsc && gulp build:icons",
+    "build-no-lint": "tsc && gulp build:icons",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
@@ -43,18 +44,27 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^7.15.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "@typescript-eslint/parser": "^7.18.0",
+    "braces": "3.0.3",
+    "decode-uri-component": "0.2.1",
+    "es5-ext": "0.10.63",
+    "eslint": "^8.57.1",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
     "gulp": "^4.0.2",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.3"
+    "micromatch": "4.0.8",
+    "prettier": "^3.5.3",
+    "semver": "5.7.2",
+    "typescript": "^5.8.2"
   },
   "peerDependencies": {
     "n8n-workflow": "*"
   },
   "dependencies": {
-    "sqlite3": "^5.1.7",
-    "n8n-workflow": "*"
+    "n8n-workflow": "^1.82.0",
+    "sqlite3": "^5.1.7"
+  },
+  "resolutions": {
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8"
   }
 }

@@ -104,7 +104,7 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-  <details><summary>❌ <b>Enviar mensagem</b></summary></details>
+  <details><summary>✅ <b>Enviar mensagem</b></summary></details>
 </details>
 
 <h3>WebChat</h3>
