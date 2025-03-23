@@ -7,6 +7,7 @@ import { telegramOperations } from './operations/telegram/Telegram.operations';
 import { whatsappOperations } from './operations/whatsapp/Whatsapp.operations';
 import { webchatOperations } from './operations/webchat/WebChat.operations';
 import { emailOperations } from './operations/email/Email.operations';
+import { mercadoLivreOperations } from './operations/mercadolivre/MercadoLivre.operations';
 import { enviarMensagemTextoFields } from './fields/instagram/EnviarMensagemTexto.fields';
 import { enviarMensagemAudioFields } from './fields/instagram/EnviarMensagemAudio.fields';
 import { enviarArquivoFields } from './fields/instagram/EnviarArquivo.fields';
@@ -25,6 +26,7 @@ import { enviarMensagemTextoFields as webchatEnviarMensagemTextoFields } from '.
 import { enviarArquivoFields as webchatEnviarArquivoFields } from './fields/webchat/EnviarArquivo.fields';
 import { enviarEmailTextoFields } from './fields/email/EnviarEmailTexto.fields';
 import { enviarEmailArquivosFields } from './fields/email/EnviarEmailArquivos.fields';
+import { responderPerguntaFields } from './fields/mercadolivre/ResponderPergunta.fields';
 import { listarTemplatesFields } from './fields/whatsapp/ListarTemplates.fields';
 import { criarTemplateFields } from './fields/whatsapp/CriarTemplate.fields';
 import { enviarTemplateFields } from './fields/whatsapp/EnviarTemplate.fields';
@@ -73,6 +75,7 @@ export class NotificaMeHub implements INodeType {
 			whatsappOperations,
 			webchatOperations,
 			emailOperations,
+			mercadoLivreOperations,
 			...enviarMensagemTextoFields,
 			...enviarMensagemAudioFields,
 			...enviarArquivoFields,
@@ -91,6 +94,7 @@ export class NotificaMeHub implements INodeType {
 			...webchatEnviarArquivoFields,
 			...enviarEmailTextoFields,
 			...enviarEmailArquivosFields,
+			...responderPerguntaFields,
 			...listarTemplatesFields,
 			...criarTemplateFields,
 			...enviarTemplateFields,

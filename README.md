@@ -96,7 +96,7 @@ Para utilizar o nosso **Community Node**, é necessário atender aos seguintes r
 <br>
 <details>
   <summary><b>Lista de operações</b></summary>
-  <details><summary>❌ <b>Responder uma pergunta</b></summary></details>
+  <details><summary>✅ <b>Responder uma pergunta</b></summary></details>
 </details>
 
 <h3>OLX</h3>

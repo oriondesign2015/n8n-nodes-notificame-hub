@@ -9,11 +9,17 @@ export const resources: INodeProperties = {
 		{
 			name: 'Email',
 			value: 'email',
+			description: 'Enviar emails com ou sem anexos',
 		},
 		{
 			name: 'Instagram',
 			value: 'instagram',
 			description: 'Gerenciar canal do Instagram',
+		},
+		{
+			name: 'Mercado Livre',
+			value: 'mercadolivre',
+			description: 'Responder perguntas de clientes no Mercado Livre',
 		},
 		{
 			name: 'Messenger',
@@ -33,6 +39,7 @@ export const resources: INodeProperties = {
 		{
 			name: 'WebChat',
 			value: 'webchat',
+			description: 'Gerenciar canal de chat para websites',
 		},
 		{
 			name: 'WhatsApp',
