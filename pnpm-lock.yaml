@@ -15,9 +15,6 @@ importers:
       n8n-workflow:
         specifier: ^1.82.0
         version: 1.82.0
-      sqlite3:
-        specifier: ^5.1.7
-        version: 5.1.7
     devDependencies:
       '@typescript-eslint/parser':
         specifier: ^7.18.0
@@ -49,6 +46,9 @@ importers:
       semver:
         specifier: 5.7.2
         version: 5.7.2
+      sqlite3:
+        specifier: ^5.1.7
+        version: 5.1.7
       typescript:
         specifier: ^5.8.2
         version: 5.8.2

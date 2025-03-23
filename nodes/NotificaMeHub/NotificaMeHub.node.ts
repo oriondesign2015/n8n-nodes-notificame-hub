@@ -40,6 +40,7 @@ import { enviarLocalizacaoFields as whatsappEnviarLocalizacaoFields } from './fi
 import { enviarMensagemBotoesFields as whatsappEnviarMensagemBotoesFields } from './fields/whatsapp/EnviarMensagemBotoes.fields';
 import { enviarMensagemListasFields as whatsappEnviarMensagemListasFields } from './fields/whatsapp/EnviarMensagemListas.fields';
 import { enviarMensagemCTAFields as whatsappEnviarMensagemCTAFields } from './fields/whatsapp/EnviarMensagemCTA.fields';
+import { definirWebhookFields } from './fields/revenda/DefinirWebhook.fields';
 
 export class NotificaMeHub implements INodeType {
 	description: INodeTypeDescription = {
@@ -110,6 +111,7 @@ export class NotificaMeHub implements INodeType {
 			...whatsappEnviarMensagemBotoesFields,
 			...whatsappEnviarMensagemListasFields,
 			...whatsappEnviarMensagemCTAFields,
+			...definirWebhookFields,
 		],
 	};
 } 

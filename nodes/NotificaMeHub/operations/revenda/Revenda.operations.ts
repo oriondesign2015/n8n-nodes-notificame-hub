@@ -19,6 +19,12 @@ export const revendaOperations: INodeProperties = {
 			routing: listarSubcontasTransport,
 			action: 'Listar subcontas a revenda',
 		},
+		{
+			name: 'Definir Webhook',
+			value: 'definirWebhook',
+			description: 'Define o webhook para receber eventos de um canal',
+			action: 'Definir webhook para receber eventos',
+		},
 	],
 	default: 'listSubaccounts',
 }; 
